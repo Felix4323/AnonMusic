@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnonMusic</title>
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="perfil.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Itim&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Itim&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+    <header class="header-biblioteca">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <img src="img/logo.png" alt="Logo" class="logo__imagen">
+                    <h1 class="logo__nombre no-margin centrar-texto"><span class="logo__bold">AnonMusic</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="perfil.html" class="navegacion__enlace">Perfil</a>
+                    <a href="biblioteca.html" class="navegacion__enlace">Biblioteca</a>                    
+                    <a href="canal.html" class="navegacion__enlace">Canal</a>
+                    <a href="login.html" class="navegacion__enlace">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-filled" width="30" height="30" viewBox="0 0 20 20" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" stroke-width="0" fill="currentColor" />
+                            <path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </a>
+                    <div class="barra-busqueda">
+                        <input type="text" placeholder="Buscar Artistas, Canciones, Grupos" class="input-busqueda">
+                        <button class="boton-busqueda">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M17 17L21 21" stroke="#E4881D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#E4881D" stroke-width="2"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>            
+        </div>
+    </header>
+
+    <div class="contenido-derecha">
+        <div class="contenido-principal-canal align-right"> <!-- Agregada clase "align-right" -->            
+            <main class="blog">
+                <div class="titulo-contenedor">
+                    <h3 class="titulo-canal-listas">Historial </h3>
+                    <button class="ver-todo-btn">Ver todo</button>
+                </div>            
+            
+                <article class="entrada entrada--espaciado">
+                    <div class="entrada__contenido texto-izquierda">
+                        <h4 class="Nombre-titulo">Melodías del Tiempo</h4>
+                        <p class="autor">Timeless</p>                                        
+                    </div>
+                    <div class="entrada__imagen-canal1">
+                        <picture>
+                            <source loading="lazy" srcset="img/img1.webp" type="image/webp">
+                            <img loading="lazy" src="img/img1.jpg" alt="imagen blog"> 
+                        </picture>
+                    </div>
+                </article>
+            
+                <article class="entrada entrada--espaciado">
+                    <div class="entrada__contenido texto-izquierda">
+                        <h4 class="Nombre-titulo">Reflejos de la Luna</h4>
+                        <p class="autor">Silver</p>                                     
+                    </div>
+                    <div class="entrada__imagen-canal2">
+                        <picture>
+                            <source loading="lazy" srcset="img/rock.webp" type="image/webp">                        
+                            <img loading="lazy" src="img/rock.jpg" alt="imagen blog"> 
+                        </picture>
+                    </div>
+                </article>
+                
+                <article class="entrada entrada--espaciado">
+                    <div class="entrada__contenido texto-izquierda">
+                        <h4 class="Nombre-titulo">Latidos del Universo</h4>
+                        <p class="autor">Beats</p>                      
+                    </div>
+                    <div class="entrada__imagen-canal3">
+                        <picture>
+                            <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog3.jpg" alt="imagen blog"> 
+                        </picture>
+                    </div>
+                </article>                            
+            </main>
+            
+        </div>
+    </div>
+    
+
+    <div class="feed">
+        <div class="publicacion">
+            <div class="perfil">
+                <img src="img/contacto.jpg" alt="Foto de perfil">                
+                <div class="info-perfil">
+                    <h3>Coco</h3>
+                    <p>26/06/2023 - 17:45 pm</p>
+                </div>
+            </div>
+            <div class="contenido-publicacion">
+                <p>¡Qué canción tan increíble! Me encantaría visitar ese lugar algún día.</p>                
+                <div class="acciones">
+                    <button>Me gusta</button>
+                    <button>Comentar</button>
+                    <button>Compartir</button>
+                </div>
+            </div>
+        </div>
+        <!-- Más publicaciones aquí -->
+    </div>
+
+    <div class="feed">
+        <div class="publicacion">
+            <div class="perfil">
+                <img src="img/pub5.jpg" alt="Foto de perfil">                
+                <div class="info-perfil">
+                    <h3>HarmonySeeker</h3>
+                    <p>26/04/2023 - 04:45 pm</p>
+                </div>
+            </div>
+            <div class="contenido-publicacion">
+                <p>Tu música es el mejor compañero de viaje.</p>                
+                <div class="acciones">
+                    <button>Me gusta</button>
+                    <button>Comentar</button>
+                    <button>Compartir</button>
+                </div>
+            </div>
+        </div>
+        <!-- Más publicaciones aquí -->
+    </div>
+
+    <div class="feed">
+        <div class="publicacion">
+            <div class="perfil">
+                <img src="img/pub4.jpg" alt="Foto de perfil">                
+                <div class="info-perfil">
+                    <h3>GroovePioneer</h3>
+                    <p>26/01/2024 - 13:13pm</p>
+                </div>
+            </div>
+            <div class="contenido-publicacion">
+                <p>Esta melodía siempre me hace reflexionar.</p>                
+                <div class="acciones">
+                    <button>Me gusta</button>
+                    <button>Comentar</button>
+                    <button>Compartir</button>
+                </div>
+            </div>
+        </div>
+        <!-- Más publicaciones aquí -->
+    </div>
+
+    <div class="feed">
+        <div class="publicacion">
+            <div class="perfil">
+                <img src="img/pub3.jpg" alt="Foto de perfil">                
+                <div class="info-perfil">
+                    <h3>SoundVoyager</h3>
+                    <p>26/06/2023 - 17:45 pm</p>
+                </div>
+            </div>
+            <div class="contenido-publicacion">
+                <p>¡Qué canción tan increíble! Me encantaría visitar ese lugar algún día.</p>                
+                <div class="acciones">
+                    <button>Me gusta</button>
+                    <button>Comentar</button>
+                    <button>Compartir</button>
+                </div>
+            </div>
+        </div>
+        <!-- Más publicaciones aquí -->
+    </div>
+
+    <div class="feed">
+        <div class="publicacion">
+            <div class="perfil">
+                <img src="img/pub2.jpg" alt="Foto de perfil">                
+                <div class="info-perfil">
+                    <h3>MelodyDreamer</h3>
+                    <p>26/06/2023 - 17:45 pm</p>
+                </div>
+            </div>
+            <div class="contenido-publicacion">
+                <p>¡Qué canción tan increíble! Me encantaría visitar ese lugar algún día.</p>                
+                <div class="acciones">
+                    <button>Me gusta</button>
+                    <button>Comentar</button>
+                    <button>Compartir</button>
+                </div>
+            </div>
+        </div>
+        <!-- Más publicaciones aquí -->
+    </div>
+
+    <div class="feed">
+        <div class="publicacion">
+            <div class="perfil">
+                <img src="img/pub1.jpg" alt="Foto de perfil">                
+                <div class="info-perfil">
+                    <h3>MusicLover</h3>
+                    <p>26/06/2023 - 17:45 pm</p>
+                </div>
+            </div>
+            <div class="contenido-publicacion">
+                <p>¡Qué canción tan increíble! Me encantaría visitar ese lugar algún día.</p>                
+                <div class="acciones">
+                    <button>Me gusta</button>
+                    <button>Comentar</button>
+                    <button>Compartir</button>
+                </div>
+            </div>
+        </div>
+        <!-- Más publicaciones aquí -->
+    </div>
+    
+
+    <footer class="footer">
+        <div class="contenedor">
+            <p>© 2024 Anonmusic Publisher App. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>

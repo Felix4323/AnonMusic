@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnonMusic</title>
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="perfil.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Itim&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Itim&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <img src="img/logo.png" alt="Logo" class="logo__imagen">
+                    <h1 class="logo__nombre no-margin centrar-texto"><span class="logo__bold">AnonMusic</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="perfil.html" class="navegacion__enlace">Perfil</a>
+                    <a href="biblioteca.html" class="navegacion__enlace">Biblioteca</a>                    
+                    <a href="canal.html" class="navegacion__enlace">Canal</a>
+                    <a href="login.html" class="navegacion__enlace">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-filled" width="30" height="30" viewBox="0 0 20 20" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" stroke-width="0" fill="currentColor" />
+                            <path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </a>
+                    <div class="barra-busqueda">
+                        <input type="text" placeholder="Buscar Artistas, Canciones, Grupos" class="input-busqueda">
+                        <button class="boton-busqueda">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M17 17L21 21" stroke="#E4881D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#E4881D" stroke-width="2"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>            
+        </div>
+    </header>
+
+    <div class="login">
+        <div class="fila">
+            <div class="botones-horizontal">
+                <button class="boton-iniciarsesion">Iniciar sesión</button>
+                <a href="registrarse.html" class="boton-registrar">Registrarse</a>
+            </div>
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Usuario" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+        <div class="fila">
+            <a href="recuperar.html" class="boton-recuperar">¿Olvidaste tu contraseña?</a>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    
+
+    <footer class="footer">
+        <div class="contenedor">
+            <p>© 2024 Anonmusic Publisher App. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
